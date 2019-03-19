@@ -1,6 +1,6 @@
 {% set name = "dictdiffer" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "b6eed4cf74ed31ae9646257a9f802bb09e545ca817d5c0119d747b6a05b6a22d" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "b3ad476fc9cca60302b52c50e1839342d2092aeaba586d69cbf9249f87f52463" %}
 
 package:
   name: "{{ name|lower }}"
@@ -20,6 +20,7 @@ requirements:
     - pip
     - python
     - pytest-runner >=2.7
+    - setuptools_scm >=3.1
   run:
     - python
 
