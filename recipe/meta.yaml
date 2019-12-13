@@ -1,6 +1,6 @@
 {% set name = "dictdiffer" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "b3ad476fc9cca60302b52c50e1839342d2092aeaba586d69cbf9249f87f52463" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "1adec0d67cdf6166bda96ae2934ddb5e54433998ceab63c984574d187cc563d2" %}
 
 package:
   name: "{{ name|lower }}"
