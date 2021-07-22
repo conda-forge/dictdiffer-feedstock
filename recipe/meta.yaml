@@ -1,19 +1,19 @@
 {% set name = "dictdiffer" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "1adec0d67cdf6166bda96ae2934ddb5e54433998ceab63c984574d187cc563d2" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "17bacf5fbfe613ccf1b6d512bd766e6b21fb798822a133aa86098b8ac9997578" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "{{ sha256 }}"
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
