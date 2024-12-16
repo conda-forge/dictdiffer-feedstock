@@ -20,7 +20,8 @@ requirements:
     - pip
     - python {{ python_min }}
     - pytest-runner >=2.7
-    - setuptools_scm >=3.1
+    - setuptools
+    - setuptools-scm >=3.1
   run:
     - python >={{ python_min }}
 
